@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.container-search {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    background-color: rgb(93, 235, 223);
+    max-height: 100%;
+    padding: 20px;
+}
+
+.lable {
+    margin-bottom: 7px;
+}
+
+.select {
+    margin-bottom: 7px;
+}
+
+.container-body {
+    flex: 8;
+}
+
+
+.container-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: blue;
+
+}
+
+.inner {
+    position: relative;
+    height: 500px;
+    width: 500px;
+
+}
+
+.svg {
+    height: 500px;
+    width: 500px;
+    /* background-color: red; */
+}
+
+.point {
+    position: absolute;
+    width: 3px;
+    /* Đường kính của dấu chấm */
+    height: 3px;
+    background-color: red;
+    /* Màu sắc của dấu chấm */
+    border-radius: 50%;
+    /* Tạo hình tròn */
+    transform: translate(-50%, -50%);
+    z-index: 4;
+}
+
+.point2 {
+    position: absolute;
+    width: 3px;
+    /* Đường kính của dấu chấm */
+    height: 3px;
+    background-color: rgb(88, 172, 241);
+    /* Màu sắc của dấu chấm */
+    border-radius: 50%;
+    /* Tạo hình tròn */
+    transform: translate(-50%, -50%);
+}
+
+.lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 1px solid white;
+    /* Tuỳ chỉnh thêm nếu cần */
+    z-index: 3;
+
+}
+
+.line {
+    stroke: red;
+    /* Màu sắc của đường */
+    stroke-width: 2;
+    /* Độ dày của đường */
+}
+
+.container:hover {
+    fill: #000;
+}
+
+.container path {
+    fill: rgba(185, 241, 229, 0.918);
+    stroke: #8B4513;
+    stroke-width: 1px;
+    cursor: pointer;
+}
+
+.lines path {
+    cursor: pointer;
+}
+.inner svg{
+    cursor: pointer;
+}
+ .container-Best_First_Search{
+    margin-top: 20px;
+}
+.container-Hill_Climbing{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.label2{
+    position: absolute;
+    left: 20px;
+    top: -4px;
+    font-size: 12px;
+    display: none;
+    width: 80px;
+    font-weight: 600;
+}
+
+.point:hover  .label2{
+    display: block;
+}
